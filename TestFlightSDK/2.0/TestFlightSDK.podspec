@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.platform = :ios
   s.source_files = '*.h'
   s.preserve_paths = 'libTestFlight.a'
-  s.library = 'TestFlight', 'z'
+  s.libraries = 'TestFlight', 'z'
   s.framework = 'UIKit'
   s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/TestFlightSDK"' }
 end
